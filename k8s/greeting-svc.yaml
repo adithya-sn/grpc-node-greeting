@@ -5,7 +5,8 @@ metadata:
   namespace: default
 spec:
   ports:
-  - port: 50050
+  - name: grpc-srv-port
+    port: 50050
     protocol: TCP
     targetPort: 50051
   selector:
