@@ -1,0 +1,6 @@
+From node
+workdir /grpc-node-server
+copy . .
+run ["npm", "install", "--save", "grpc", "@grpc/proto-loader"]
+cmd ["node", "greeter_server.js"]
+

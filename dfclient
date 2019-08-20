@@ -1,0 +1,6 @@
+From node
+workdir /grpc-node-client
+copy . .
+run ["npm", "install", "--save", "grpc", "@grpc/proto-loader"]
+cmd ["bash", "-c", "sleep 90000"]
+
